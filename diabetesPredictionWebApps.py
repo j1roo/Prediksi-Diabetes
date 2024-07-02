@@ -19,7 +19,7 @@ if upload_file is not None:
 else:
     def input_user():
         gender = st.sidebar.selectbox('Gender', ('Male', 'Female'))
-        age = st.sidebar.slider('Age', 0.08, 80.0, 40.0)
+        age = st.sidebar.slider('Age', 0, 80, 40)
         hypertension = st.sidebar.slider('Hypertension', 0, 1, 0)
         heart_disease = st.sidebar.slider('Heart Disease', 0, 1, 0)
         smoking_history = st.sidebar.selectbox('Smoking History', ('never', 'former', 'current', 'No Info', 'not current'))
